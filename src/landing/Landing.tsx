@@ -1,9 +1,9 @@
 import "./landing.css";
 
 const pad = (n: number) => String(n).padStart(2, "0");
-const viri = (n: number) => `/viri/gen/viri-${pad(n)}.png`;
-const picto = (n: number) => `/viri/pictos/picto-${pad(n)}.png`;
-const emo = (n: number) => `/viri/emotions/emo-${pad(n)}.png`;
+const viri = (n: number) => `/viri/gen/viri-${pad(n)}.webp`;
+const picto = (n: number) => `/viri/pictos/picto-${pad(n)}.webp`;
+const emo = (n: number) => `/viri/emotions/emo-${pad(n)}.webp`;
 
 const BrandMark = ({ size = 22, color = "#fff", bg = "var(--vira-lila)", radius = 7, pad = 0.22 }: { size?: number; color?: string; bg?: string; radius?: number; pad?: number }) => (
   <span className="brand-mark" aria-hidden style={{ width: size, height: size, background: bg, borderRadius: radius, display: "inline-grid", placeItems: "center", color }}>
@@ -71,7 +71,7 @@ function Hero() {
       <div className="lp-hero-stage">
         <div>
           <span className="lp-eyebrow">
-            <span className="dot" /> Now boarding · YC&nbsp;S26 batch
+            <span className="dot" /> Now boarding · Cohort&nbsp;#001
           </span>
           <h1>
             Your brain isn't broken.
@@ -100,7 +100,7 @@ function Hero() {
         </div>
 
         <div className="lp-viri-stage lp-viri-stage--mock">
-          <img className="lp-mockup" src="/mockup-home.png" alt="Vira app — home screen" />
+          <img className="lp-mockup" src="/mockup-home.webp" alt="Vira app — home screen" width={800} height={1548} fetchPriority="high" decoding="async" />
           <img className="lp-orb o1" src={picto(4)} alt="" />
           <img className="lp-orb o2" src={picto(15)} alt="" />
           <img className="lp-orb o4" src={picto(30)} alt="" />
@@ -187,7 +187,7 @@ function Solution() {
         <div className="lp-pillars">
           <div className="lp-pillar p1">
             <span className="tag">01 · Organize</span>
-            <img className="picto" src="/viri/pictos/picto-08.png" alt="" />
+            <img loading="lazy" decoding="async" className="picto" src="/viri/pictos/picto-08.webp" alt="" />
             <div>
               <h3>Time.</h3>
               <p>Visual calendar. Soft reminders. Med tracker. Habits that bend with the week.</p>
@@ -195,7 +195,7 @@ function Solution() {
           </div>
           <div className="lp-pillar p2">
             <span className="tag">02 · Focus</span>
-            <img className="picto" src="/viri/pictos/picto-12.png" alt="" />
+            <img loading="lazy" decoding="async" className="picto" src="/viri/pictos/picto-12.webp" alt="" />
             <div>
               <h3>Attention.</h3>
               <p>Pomodoro modes for study, walks, sleep. SOS button when overwhelm hits.</p>
@@ -203,7 +203,7 @@ function Solution() {
           </div>
           <div className="lp-pillar p3">
             <span className="tag">03 · Feel</span>
-            <img className="picto" src="/viri/pictos/picto-20.png" alt="" />
+            <img loading="lazy" decoding="async" className="picto" src="/viri/pictos/picto-20.webp" alt="" />
             <div>
               <h3>Emotion.</h3>
               <p>16 Viri faces, mindfulness, journaling. Identify what you feel before it owns you.</p>
@@ -211,7 +211,7 @@ function Solution() {
           </div>
           <div className="lp-pillar p4">
             <span className="tag">04 · Earn</span>
-            <img className="picto" src="/viri/pictos/picto-28.png" alt="" />
+            <img loading="lazy" decoding="async" className="picto" src="/viri/pictos/picto-28.webp" alt="" />
             <div>
               <h3>Reward.</h3>
               <p>ViriCoins, daily quests, unlockable skins. Tiny wins. Real momentum.</p>
@@ -247,7 +247,7 @@ function How() {
           ].map((s) => (
             <div className="lp-step" key={s.n}>
               <div className="step-frame" style={{ ["--bg-img" as string]: `url(${viri(s.n)})` }}>
-                <img src={viri(s.n)} alt={s.alt} />
+                <img loading="lazy" decoding="async" src={viri(s.n)} alt={s.alt} />
               </div>
               <h3>{s.h}</h3>
               <p>{s.p}</p>
@@ -276,14 +276,14 @@ function Gallery() {
       <div className="lp-gallery-row r1" aria-hidden>
         {[...MARQUEE_A, ...MARQUEE_A].map((n, i) => (
           <div className="cell" key={`g1-${i}`} style={{ ["--bg-img" as string]: `url(${viri(n)})` }}>
-            <img src={viri(n)} alt="" />
+            <img loading="lazy" decoding="async" src={viri(n)} alt="" />
           </div>
         ))}
       </div>
       <div className="lp-gallery-row r2" aria-hidden>
         {[...MARQUEE_B, ...MARQUEE_B].map((n, i) => (
           <div className="cell" key={`g2-${i}`} style={{ ["--bg-img" as string]: `url(${viri(n)})` }}>
-            <img src={viri(n)} alt="" />
+            <img loading="lazy" decoding="async" src={viri(n)} alt="" />
           </div>
         ))}
       </div>
@@ -309,7 +309,7 @@ function Proof() {
             <span className="stars">★★★★★</span>
             <p>"Other apps tell me I'm lazy in a polite voice. Viri sends me a meme when I miss a habit. Guess which one I actually open."</p>
             <div className="who">
-              <span className="ava ava-viri"><img src={viri(QUOTE_AVATARS.teen)} alt="" /></span>
+              <span className="ava ava-viri"><img loading="lazy" decoding="async" src={viri(QUOTE_AVATARS.teen)} alt="" /></span>
               <div className="meta"><b>Maya, 15</b><span>Beta user · ADHD-C · Brooklyn, NY</span></div>
             </div>
           </article>
@@ -317,7 +317,7 @@ function Proof() {
             <span className="stars">★★★★★</span>
             <p>"My daughter installed it on a Tuesday. By Friday she was telling me what 'mode' she was in. That alone changed our week."</p>
             <div className="who">
-              <span className="ava ava-viri"><img src={viri(QUOTE_AVATARS.parent)} alt="" /></span>
+              <span className="ava ava-viri"><img loading="lazy" decoding="async" src={viri(QUOTE_AVATARS.parent)} alt="" /></span>
               <div className="meta"><b>Megan, parent</b><span>Daughter, 15 · Austin, TX</span></div>
             </div>
           </article>
@@ -325,7 +325,7 @@ function Proof() {
             <span className="stars">★★★★★</span>
             <p>"First app I've seen that respects the executive-function gap without treating teens like patients. It's the missing layer."</p>
             <div className="who">
-              <span className="ava ava-viri"><img src={viri(QUOTE_AVATARS.clinician)} alt="" /></span>
+              <span className="ava ava-viri"><img loading="lazy" decoding="async" src={viri(QUOTE_AVATARS.clinician)} alt="" /></span>
               <div className="meta"><b>Dr. Alex Greene, PsyD</b><span>Child neuropsychologist · clinical advisor</span></div>
             </div>
           </article>
@@ -433,7 +433,7 @@ function CTAblock() {
     <section id="waitlist" className="lp-cta-block">
       <div className="glow" aria-hidden />
       <div className="inner">
-        <img className="viri-cta" src={viri(45)} alt="Viri inviting you in" />
+        <img loading="lazy" decoding="async" className="viri-cta" src={viri(45)} alt="Viri inviting you in" />
         <span className="lp-eyebrow"><span className="dot" /> 753 spots left in cohort #001</span>
         <h2>
           Stop scrolling.
@@ -522,7 +522,7 @@ function Emotions() {
       <div className="lp-emo-strip" aria-label="Emotional faces">
         {EMOTIONS.map((e) => (
           <figure key={e.n} className="lp-emo-card">
-            <div className="emo-bubble"><img src={emo(e.n)} alt={`Viri feeling ${e.label.toLowerCase()}`} /></div>
+            <div className="emo-bubble"><img loading="lazy" decoding="async" src={emo(e.n)} alt={`Viri feeling ${e.label.toLowerCase()}`} /></div>
             <figcaption>{e.label}</figcaption>
           </figure>
         ))}
@@ -550,7 +550,7 @@ function Skins() {
             </p>
           </div>
           <div className="lp-coin">
-            <img src={picto(28)} alt="" />
+            <img loading="lazy" decoding="async" src={picto(28)} alt="" />
             <div>
               <b>1,250</b>
               <span>ViriCoins earned this week</span>
@@ -562,7 +562,7 @@ function Skins() {
           {SKINS.map((s) => (
             <article key={s.n} className="lp-skin">
               <div className="skin-img" style={{ ["--bg-img" as string]: `url(${viri(s.n)})` }}>
-                <img src={viri(s.n)} alt={s.label} />
+                <img loading="lazy" decoding="async" src={viri(s.n)} alt={s.label} />
               </div>
               <div className="skin-foot">
                 <b>{s.label}</b>
