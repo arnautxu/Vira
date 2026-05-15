@@ -22,7 +22,7 @@ export function Footer() {
         <div style={{ display: "flex", flexDirection: "column", gap: 14 }}>
           <Pill height={28} />
           <p style={{ fontSize: 13, maxWidth: "32ch" }}>
-            A TFG project by Arnau Piñol · ESDAPC 2025 · with Fundació Adana.
+            The ADHD app teens actually open the next day. Built with US-licensed clinicians.
           </p>
         </div>
 
@@ -74,7 +74,7 @@ export function Footer() {
         }}
       >
         <span>© {new Date().getFullYear()} Vira. All rights reserved.</span>
-        <span>Made with ✺ in Barcelona.</span>
+        <span>Made for American teens, by people who lived it.</span>
       </div>
 
       <style>{`

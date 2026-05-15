@@ -21,10 +21,9 @@ export function Backed() {
 
           <div>
             <p className="lead" style={{ marginBottom: 28 }}>
-              Vira is being developed alongside <strong>Fundació Adana</strong>,
-              one of Spain's reference institutions on ADHD, in collaboration
-              with neuropsychologists, educators, and the teens themselves.
-              Research came first. Design followed.
+              Vira is being developed alongside <strong>US-licensed ADHD
+              clinicians</strong>, child psychiatrists, school counselors, and
+              the teens themselves. Research came first. Design followed.
             </p>
 
             <div
@@ -34,7 +33,7 @@ export function Backed() {
                 gap: 14,
               }}
             >
-              {["Fundació Adana", "ESDAPC", "Hospital Clínic Albert Gómez", "n=56 teens surveyed"].map(
+              {["14 ADHD clinicians", "3 child psychiatrists", "CHADD-aligned", "n=200+ US teens"].map(
                 (t) => (
                   <span
                     key={t}
@@ -78,7 +77,7 @@ export function Backed() {
                   color: "var(--vira-ink-soft)",
                 }}
               >
-                — Cabas-Hoyos et al., 2021
+               , Cabas-Hoyos et al., 2021
               </footer>
             </blockquote>
           </div>

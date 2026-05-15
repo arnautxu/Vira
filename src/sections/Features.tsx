@@ -4,7 +4,7 @@ const FEATURES = [
   {
     label: "Organize",
     title: "A calendar that won't overwhelm.",
-    body: "Daily and weekly views. Habit tracker. Medication reminders. Visual, color-coded, and built for executive function — not against it.",
+    body: "Daily and weekly views. Habit tracker. Medication reminders. Visual, color-coded, and built for executive function, not against it.",
     color: "var(--sec-blue)",
     colorDeep: "var(--sec-blue-deep)",
     items: ["Visual calendar", "Habit streaks", "Med reminders"],
@@ -12,7 +12,7 @@ const FEATURES = [
   {
     label: "Feel",
     title: "Name what you feel. Move through it.",
-    body: "One-tap emotion log. Guided mindfulness sessions. A private journal that asks the right questions — and only the right ones.",
+    body: "One-tap emotion log. Guided mindfulness sessions. A private journal that asks the right questions, and only the right ones.",
     color: "var(--sec-pink)",
     colorDeep: "var(--sec-pink-deep)",
     items: ["Emotion check-ins", "Mindfulness", "Journal"],

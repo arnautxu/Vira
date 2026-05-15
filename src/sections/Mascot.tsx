@@ -61,7 +61,7 @@ export function Mascot() {
             <span style={{ color: "var(--vira-lila-deep)" }}>companion.</span>
           </h2>
           <p className="lead" style={{ marginBottom: 28 }}>
-            Viri isn't a chatbot. Viri is a presence — a small character who
+            Viri isn't a chatbot. Viri is a presence, a small character who
             cheers, prompts, and rests with you. Six moods. Endless skins.
           </p>
 

@@ -2,7 +2,7 @@ const STEPS = [
   {
     n: "01",
     title: "Open your day",
-    body: "Greeted by Viri. Your top tasks, your med reminders, and a one-tap emotion check — all on the home screen.",
+    body: "Greeted by Viri. Your top tasks, your med reminders, and a one-tap emotion check, all on the home screen.",
     accent: "var(--sec-blue)",
   },
   {
@@ -14,7 +14,7 @@ const STEPS = [
   {
     n: "03",
     title: "Earn the win",
-    body: "Every task earns XP. Every streak unlocks cards. Every level changes how Viri looks — and how you feel.",
+    body: "Every task earns XP. Every streak unlocks cards. Every level changes how Viri looks, and how you feel.",
     accent: "var(--sec-yellow)",
   },
 ];

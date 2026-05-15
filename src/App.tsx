@@ -1,14 +1,6 @@
 import { useEffect } from "react";
 import Lenis from "lenis";
-import { Nav } from "./sections/Nav";
-import { Hero } from "./sections/Hero";
-import { Problem } from "./sections/Problem";
-import { Features } from "./sections/Features";
-import { Mascot } from "./sections/Mascot";
-import { HowItWorks } from "./sections/HowItWorks";
-import { Backed } from "./sections/Backed";
-import { CTA } from "./sections/CTA";
-import { Footer } from "./sections/Footer";
+import { Landing } from "./landing/Landing";
 
 function App() {
   useEffect(() => {
@@ -29,22 +21,7 @@ function App() {
     };
   }, []);
 
-  return (
-    <>
-      <Nav />
-      <main>
-        <Hero />
-        <Problem />
-        <Features />
-        <Mascot />
-        <HowItWorks />
-        <Backed />
-        <CTA />
-        <Footer />
-      </main>
-      <div className="grain" aria-hidden />
-    </>
-  );
+  return <Landing />;
 }
 
 export default App;

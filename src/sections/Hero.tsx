@@ -38,7 +38,7 @@ export function Hero() {
             <span style={{ color: "var(--vira-lila)" }}>Find your direction.</span>
           </h1>
           <p className="lead" style={{ marginBottom: 36 }}>
-            Vira is the first app built for how ADHD teens actually think — time,
+            Vira is the first app built for how ADHD teens actually think, time,
             emotions, focus, and motivation, all in one place.
           </p>
           <div style={{ display: "flex", gap: 12, flexWrap: "wrap" }}>
@@ -62,7 +62,7 @@ export function Hero() {
               opacity: 0.85,
             }}
           >
-            <span>★ Built with Fundació Adana</span>
+            <span>★ Built with US ADHD clinicians</span>
             <span>★ Research-backed</span>
             <span>★ iOS · Android</span>
           </div>

@@ -11,7 +11,7 @@ const STATS = [
   },
   {
     figure: "60%+",
-    body: "say a tool could help — if it were simple enough.",
+    body: "say a tool could help, if it were simple enough.",
     accent: "var(--sec-green)",
   },
 ];
