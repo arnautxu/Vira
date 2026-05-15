@@ -1,0 +1,29 @@
+:root {
+  --vira-lila: #bb77ff;
+  --vira-lila-soft: #d6aaff;
+  --vira-lila-deep: #8a4dd6;
+  --vira-ink: #1c1a1f;
+  --vira-ink-soft: #3a3640;
+  --vira-paper: #ffffff;
+  --vira-cream: #faf7ff;
+  --vira-line: #ece6f5;
+
+  --sec-blue: #83bcd4;
+  --sec-blue-deep: #579fbe;
+  --sec-pink: #ff7797;
+  --sec-pink-deep: #e85679;
+  --sec-green: #b1d05e;
+  --sec-green-deep: #92b437;
+  --sec-yellow: #ffc33e;
+  --sec-yellow-deep: #c1970e;
+
+  --r-pill: 999px;
+  --r-card: 28px;
+  --r-tile: 20px;
+
+  --ease-out: cubic-bezier(0.2, 0.8, 0.2, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+
+  --container: 1200px;
+  --gutter: clamp(20px, 4vw, 48px);
+}
